@@ -30,11 +30,14 @@ def start_command():
         inputStream=open(filename, 'rb')
     )
     print(response)
-    if response['ResponseMetadata']['HTTPStatusCode'] == 200:
-        # TODO Handle case where 'inputTranscript' is empty string; message is populated.
-        keyboard.write('\n/{0}\n'.format(response['inputTranscript']))
-    else:
-        print("Issue with Lex") # TODO Handle failures differently
+
+    try:
+        command = '\n/{0}\n'.format(response['slots']['command'])
+        print(command)
+        keyboard.write(command)
+    except Exception as ex:
+        print(str(ex)) # Handle exceptions differently
+        
 
 sd.default.samplerate = 16000
 sd.default.channels = 1
