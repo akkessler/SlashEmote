@@ -6,7 +6,7 @@ import io
 import sys
 import os
 
-def export_resource(name, resourceType, exportType, version='1'):
+def export_resource(name, resourceType, exportType, version):
     response = lex.get_export(
         name=name,
         resourceType=resourceType,
@@ -36,12 +36,15 @@ lex = boto3.client('lex-models', 'us-east-1')
 
 cmd = sys.argv[1].lower()
 if cmd == 'import':
-    # import_resource('SlashEmote','BOT')
-    # import_resource('EmoteIntent','INTENT')
+    import_resource('SlashEmote','BOT')
+    import_resource('EmoteIntent','INTENT')
     import_resource('Emotes','SLOT_TYPE')
 elif cmd == 'export':
-    export_resource('SlashEmote','BOT','LEX')
-    export_resource('EmoteIntent','INTENT','LEX')
-    export_resource('Emotes','SLOT_TYPE','LEX')
+    bots = lex.get_bot_versions(name='SlashEmote')['bots']
+    export_resource('SlashEmote','BOT','LEX', bots[-1]['version'])
+    intents = lex.get_intent_versions(name='EmoteIntent')['intents']
+    export_resource('EmoteIntent','INTENT','LEX', intents[-1]['version'])
+    slotTypes = lex.get_slot_type_versions(name='Emotes')['slotTypes']
+    export_resource('Emotes','SLOT_TYPE','LEX', slotTypes[-1]['version'])
 else:
     print("Usage: {0} (import/export)", file=sys.stderr)

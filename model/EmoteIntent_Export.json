@@ -6,7 +6,7 @@
   },
   "resource": {
     "name": "EmoteIntent",
-    "version": "1",
+    "version": "3",
     "fulfillmentActivity": {
       "type": "ReturnIntent"
     },
@@ -19,7 +19,7 @@
         "name": "command",
         "slotConstraint": "Required",
         "slotType": "Emotes",
-        "slotTypeVersion": "1",
+        "slotTypeVersion": "3",
         "valueElicitationPrompt": {
           "messages": [
             {
@@ -37,10 +37,928 @@
       {
         "description": "Available WoW emotes",
         "name": "Emotes",
-        "version": "1",
+        "version": "3",
         "enumerationValues": [
           {
+            "value": "gloat",
+            "synonyms": []
+          },
+          {
+            "value": "grovel",
+            "synonyms": []
+          },
+          {
+            "value": "bashful",
+            "synonyms": []
+          },
+          {
+            "value": "pity",
+            "synonyms": []
+          },
+          {
+            "value": "kiss",
+            "synonyms": []
+          },
+          {
+            "value": "ponder",
+            "synonyms": []
+          },
+          {
+            "value": "crack",
+            "synonyms": []
+          },
+          {
+            "value": "fart",
+            "synonyms": []
+          },
+          {
+            "value": "pick",
+            "synonyms": []
+          },
+          {
+            "value": "strut",
+            "synonyms": []
+          },
+          {
+            "value": "dance",
+            "synonyms": []
+          },
+          {
+            "value": "snub",
+            "synonyms": []
+          },
+          {
+            "value": "welcome",
+            "synonyms": []
+          },
+          {
+            "value": "excited",
+            "synonyms": []
+          },
+          {
+            "value": "sniff",
+            "synonyms": []
+          },
+          {
+            "value": "amaze",
+            "synonyms": []
+          },
+          {
+            "value": "scratch",
+            "synonyms": []
+          },
+          {
+            "value": "angry",
+            "synonyms": []
+          },
+          {
+            "value": "panic",
+            "synonyms": []
+          },
+          {
+            "value": "eye",
+            "synonyms": []
+          },
+          {
+            "value": "rude",
+            "synonyms": []
+          },
+          {
+            "value": "flirt",
+            "synonyms": []
+          },
+          {
+            "value": "wink",
+            "synonyms": []
+          },
+          {
+            "value": "applause",
+            "synonyms": []
+          },
+          {
+            "value": "golfclap",
+            "synonyms": []
+          },
+          {
+            "value": "tickle",
+            "synonyms": []
+          },
+          {
+            "value": "strong",
+            "synonyms": []
+          },
+          {
+            "value": "shiver",
+            "synonyms": []
+          },
+          {
+            "value": "pounce",
+            "synonyms": []
+          },
+          {
+            "value": "sleep",
+            "synonyms": []
+          },
+          {
+            "value": "hungry",
+            "synonyms": []
+          },
+          {
+            "value": "whoa",
+            "synonyms": []
+          },
+          {
+            "value": "surprised",
+            "synonyms": []
+          },
+          {
+            "value": "think",
+            "synonyms": []
+          },
+          {
+            "value": "charge",
+            "synonyms": []
+          },
+          {
+            "value": "silly",
+            "synonyms": []
+          },
+          {
+            "value": "blood",
+            "synonyms": []
+          },
+          {
+            "value": "food",
+            "synonyms": []
+          },
+          {
+            "value": "yay",
+            "synonyms": []
+          },
+          {
+            "value": "calm",
+            "synonyms": []
+          },
+          {
+            "value": "openfire",
+            "synonyms": []
+          },
+          {
+            "value": "clap",
+            "synonyms": []
+          },
+          {
+            "value": "thank",
+            "synonyms": [
+              "thanks",
+              "ty",
+              "thankyou"
+            ]
+          },
+          {
+            "value": "slap",
+            "synonyms": []
+          },
+          {
+            "value": "spit",
+            "synonyms": []
+          },
+          {
+            "value": "beg",
+            "synonyms": []
+          },
+          {
+            "value": "gasp",
+            "synonyms": []
+          },
+          {
+            "value": "guffaw",
+            "synonyms": []
+          },
+          {
+            "value": "drool",
+            "synonyms": []
+          },
+          {
+            "value": "lie",
+            "synonyms": []
+          },
+          {
+            "value": "shrug",
+            "synonyms": []
+          },
+          {
+            "value": "woot",
+            "synonyms": []
+          },
+          {
+            "value": "oom",
+            "synonyms": []
+          },
+          {
+            "value": "smell",
+            "synonyms": []
+          },
+          {
+            "value": "glare",
+            "synonyms": []
+          },
+          {
+            "value": "disappointed",
+            "synonyms": []
+          },
+          {
+            "value": "snicker",
+            "synonyms": []
+          },
+          {
+            "value": "bark",
+            "synonyms": []
+          },
+          {
+            "value": "duck",
+            "synonyms": []
+          },
+          {
+            "value": "blush",
+            "synonyms": []
+          },
+          {
+            "value": "lick",
+            "synonyms": []
+          },
+          {
+            "value": "talk",
+            "synonyms": []
+          },
+          {
+            "value": "laugh",
+            "synonyms": []
+          },
+          {
+            "value": "curtsey",
+            "synonyms": []
+          },
+          {
+            "value": "surrender",
+            "synonyms": []
+          },
+          {
+            "value": "train",
+            "synonyms": []
+          },
+          {
+            "value": "peon",
+            "synonyms": []
+          },
+          {
+            "value": "pat",
+            "synonyms": []
+          },
+          {
+            "value": "impatient",
+            "synonyms": []
+          },
+          {
+            "value": "facepalm",
+            "synonyms": []
+          },
+          {
+            "value": "snarl",
+            "synonyms": []
+          },
+          {
+            "value": "bleed",
+            "synonyms": []
+          },
+          {
+            "value": "feast",
+            "synonyms": []
+          },
+          {
+            "value": "volunteer",
+            "synonyms": []
+          },
+          {
+            "value": "healme",
+            "synonyms": []
+          },
+          {
+            "value": "puzzled",
+            "synonyms": []
+          },
+          {
+            "value": "mourn",
+            "synonyms": []
+          },
+          {
+            "value": "bored",
+            "synonyms": []
+          },
+          {
+            "value": "party",
+            "synonyms": []
+          },
+          {
+            "value": "farewell",
+            "synonyms": []
+          },
+          {
+            "value": "shoo",
+            "synonyms": []
+          },
+          {
+            "value": "highfive",
+            "synonyms": []
+          },
+          {
+            "value": "nod",
+            "synonyms": []
+          },
+          {
+            "value": "shy",
+            "synonyms": []
+          },
+          {
+            "value": "cold",
+            "synonyms": []
+          },
+          {
+            "value": "blink",
+            "synonyms": []
+          },
+          {
+            "value": "greetings",
+            "synonyms": []
+          },
+          {
+            "value": "wave",
+            "synonyms": []
+          },
+          {
+            "value": "salute",
+            "synonyms": []
+          },
+          {
+            "value": "ding",
+            "synonyms": []
+          },
+          {
+            "value": "pizza",
+            "synonyms": []
+          },
+          {
+            "value": "cringe",
+            "synonyms": []
+          },
+          {
+            "value": "sorry",
+            "synonyms": []
+          },
+          {
+            "value": "bite",
+            "synonyms": []
+          },
+          {
+            "value": "shindig",
+            "synonyms": []
+          },
+          {
+            "value": "rolleyes",
+            "synonyms": []
+          },
+          {
+            "value": "stare",
+            "synonyms": []
+          },
+          {
+            "value": "applaud",
+            "synonyms": []
+          },
+          {
+            "value": "cower",
+            "synonyms": []
+          },
+          {
+            "value": "nosepick",
+            "synonyms": []
+          },
+          {
+            "value": "bonk",
+            "synonyms": []
+          },
+          {
+            "value": "cuddle",
+            "synonyms": []
+          },
+          {
+            "value": "lavish",
+            "synonyms": []
+          },
+          {
+            "value": "introduce",
+            "synonyms": []
+          },
+          {
+            "value": "sexy",
+            "synonyms": []
+          },
+          {
+            "value": "yes",
+            "synonyms": []
+          },
+          {
+            "value": "victory",
+            "synonyms": []
+          },
+          {
+            "value": "frown",
+            "synonyms": []
+          },
+          {
+            "value": "greet",
+            "synonyms": []
+          },
+          {
+            "value": "commend",
+            "synonyms": []
+          },
+          {
+            "value": "cheer",
+            "synonyms": []
+          },
+          {
+            "value": "congrats",
+            "synonyms": []
+          },
+          {
+            "value": "praise",
+            "synonyms": []
+          },
+          {
+            "value": "bye",
+            "synonyms": []
+          },
+          {
+            "value": "tease",
+            "synonyms": []
+          },
+          {
+            "value": "followme",
+            "synonyms": []
+          },
+          {
+            "value": "rasp",
+            "synonyms": []
+          },
+          {
+            "value": "hug",
+            "synonyms": []
+          },
+          {
+            "value": "hi",
+            "synonyms": []
+          },
+          {
+            "value": "bounce",
+            "synonyms": []
+          },
+          {
+            "value": "happy",
+            "synonyms": []
+          },
+          {
+            "value": "moo",
+            "synonyms": []
+          },
+          {
+            "value": "bravo",
+            "synonyms": []
+          },
+          {
+            "value": "disappointment",
+            "synonyms": []
+          },
+          {
+            "value": "lost",
+            "synonyms": []
+          },
+          {
+            "value": "flop",
+            "synonyms": []
+          },
+          {
+            "value": "wrath",
+            "synonyms": []
+          },
+          {
+            "value": "roar",
+            "synonyms": []
+          },
+          {
+            "value": "yw",
+            "synonyms": [
+              "yourwelcome"
+            ]
+          },
+          {
+            "value": "fear",
+            "synonyms": []
+          },
+          {
+            "value": "pest",
+            "synonyms": []
+          },
+          {
+            "value": "liedown",
+            "synonyms": []
+          },
+          {
+            "value": "work",
+            "synonyms": []
+          },
+          {
+            "value": "whistle",
+            "synonyms": []
+          },
+          {
+            "value": "attacktarget",
+            "synonyms": []
+          },
+          {
+            "value": "agree",
+            "synonyms": []
+          },
+          {
+            "value": "drink",
+            "synonyms": []
+          },
+          {
+            "value": "purr",
+            "synonyms": []
+          },
+          {
+            "value": "moon",
+            "synonyms": []
+          },
+          {
+            "value": "laydown",
+            "synonyms": []
+          },
+          {
+            "value": "belch",
+            "synonyms": []
+          },
+          {
             "value": "hello",
+            "synonyms": []
+          },
+          {
+            "value": "wickedly",
+            "synonyms": []
+          },
+          {
+            "value": "doh",
+            "synonyms": []
+          },
+          {
+            "value": "scared",
+            "synonyms": []
+          },
+          {
+            "value": "love",
+            "synonyms": []
+          },
+          {
+            "value": "jk",
+            "synonyms": []
+          },
+          {
+            "value": "wait",
+            "synonyms": []
+          },
+          {
+            "value": "lol",
+            "synonyms": []
+          },
+          {
+            "value": "cackle",
+            "synonyms": []
+          },
+          {
+            "value": "brb ???",
+            "synonyms": []
+          },
+          {
+            "value": "smirk",
+            "synonyms": []
+          },
+          {
+            "value": "mad",
+            "synonyms": []
+          },
+          {
+            "value": "peer",
+            "synonyms": []
+          },
+          {
+            "value": "yield",
+            "synonyms": []
+          },
+          {
+            "value": "eat",
+            "synonyms": []
+          },
+          {
+            "value": "growl",
+            "synonyms": []
+          },
+          {
+            "value": "flap",
+            "synonyms": []
+          },
+          {
+            "value": "veto",
+            "synonyms": []
+          },
+          {
+            "value": "grin",
+            "synonyms": []
+          },
+          {
+            "value": "question",
+            "synonyms": []
+          },
+          {
+            "value": "tired",
+            "synonyms": []
+          },
+          {
+            "value": "apologize",
+            "synonyms": []
+          },
+          {
+            "value": "comfort",
+            "synonyms": []
+          },
+          {
+            "value": "stink",
+            "synonyms": []
+          },
+          {
+            "value": "soothe",
+            "synonyms": []
+          },
+          {
+            "value": "catty",
+            "synonyms": []
+          },
+          {
+            "value": "moan",
+            "synonyms": []
+          },
+          {
+            "value": "insult",
+            "synonyms": []
+          },
+          {
+            "value": "giggle",
+            "synonyms": []
+          },
+          {
+            "value": "sigh",
+            "synonyms": []
+          },
+          {
+            "value": "shake",
+            "synonyms": []
+          },
+          {
+            "value": "doom",
+            "synonyms": []
+          },
+          {
+            "value": "sob",
+            "synonyms": []
+          },
+          {
+            "value": "cough",
+            "synonyms": []
+          },
+          {
+            "value": "shimmy",
+            "synonyms": []
+          },
+          {
+            "value": "listen",
+            "synonyms": []
+          },
+          {
+            "value": "pray",
+            "synonyms": []
+          },
+          {
+            "value": "smile",
+            "synonyms": []
+          },
+          {
+            "value": "confused",
+            "synonyms": []
+          },
+          {
+            "value": "plead",
+            "synonyms": []
+          },
+          {
+            "value": "rear",
+            "synonyms": []
+          },
+          {
+            "value": "threaten",
+            "synonyms": []
+          },
+          {
+            "value": "raise",
+            "synonyms": []
+          },
+          {
+            "value": "spoon",
+            "synonyms": []
+          },
+          {
+            "value": "blow",
+            "synonyms": []
+          },
+          {
+            "value": "massage",
+            "synonyms": []
+          },
+          {
+            "value": "kneel",
+            "synonyms": []
+          },
+          {
+            "value": "boggle",
+            "synonyms": []
+          },
+          {
+            "value": "incoming",
+            "synonyms": []
+          },
+          {
+            "value": "tap",
+            "synonyms": []
+          },
+          {
+            "value": "violin",
+            "synonyms": []
+          },
+          {
+            "value": "curious",
+            "synonyms": []
+          },
+          {
+            "value": "helpme",
+            "synonyms": []
+          },
+          {
+            "value": "read",
+            "synonyms": []
+          },
+          {
+            "value": "lay",
+            "synonyms": []
+          },
+          {
+            "value": "poke",
+            "synonyms": []
+          },
+          {
+            "value": "congratulate",
+            "synonyms": []
+          },
+          {
+            "value": "chuckle",
+            "synonyms": []
+          },
+          {
+            "value": "fidget",
+            "synonyms": []
+          },
+          {
+            "value": "thirsty",
+            "synonyms": []
+          },
+          {
+            "value": "gaze",
+            "synonyms": []
+          },
+          {
+            "value": "mock",
+            "synonyms": []
+          },
+          {
+            "value": "no",
+            "synonyms": []
+          },
+          {
+            "value": "chicken",
+            "synonyms": []
+          },
+          {
+            "value": "goodbyte",
+            "synonyms": []
+          },
+          {
+            "value": "regret",
+            "synonyms": []
+          },
+          {
+            "value": "flee",
+            "synonyms": []
+          },
+          {
+            "value": "bow",
+            "synonyms": []
+          },
+          {
+            "value": "point",
+            "synonyms": []
+          },
+          {
+            "value": "weep",
+            "synonyms": []
+          },
+          {
+            "value": "whine",
+            "synonyms": []
+          },
+          {
+            "value": "flex",
+            "synonyms": []
+          },
+          {
+            "value": "ready",
+            "synonyms": []
+          },
+          {
+            "value": "cat",
+            "synonyms": []
+          },
+          {
+            "value": "knuckles",
+            "synonyms": []
+          },
+          {
+            "value": "wicked",
+            "synonyms": []
+          },
+          {
+            "value": "yawn",
+            "synonyms": []
+          },
+          {
+            "value": "brandish",
+            "synonyms": []
+          },
+          {
+            "value": "cry",
+            "synonyms": []
+          },
+          {
+            "value": "hail",
+            "synonyms": []
+          },
+          {
+            "value": "groan",
+            "synonyms": []
+          },
+          {
+            "value": "beckon",
+            "synonyms": []
+          },
+          {
+            "value": "rofl",
+            "synonyms": []
+          },
+          {
+            "value": "glad",
+            "synonyms": []
+          },
+          {
+            "value": "chew",
+            "synonyms": []
+          },
+          {
+            "value": "threat",
+            "synonyms": []
+          },
+          {
+            "value": "taunt",
+            "synonyms": []
+          },
+          {
+            "value": "burp",
             "synonyms": []
           }
         ],
