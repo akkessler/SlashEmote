@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "description": "Available WoW emotes",
+    "name": "Emotes",
+    "version": "1",
+    "enumerationValues": [
+      {
+        "value": "hello",
+        "synonyms": []
+      }
+    ],
+    "valueSelectionStrategy": "TOP_RESOLUTION"
+  }
+}
