@@ -6,6 +6,8 @@ import boto3
 import keyboard
 import sys
 import time
+import os
+
 
 def callback(indata, frames, time, status):
     global q
@@ -29,6 +31,7 @@ def start_command():
         accept='text/plain; charset=utf-8',
         inputStream=open(filename, 'rb')
     )
+    os.remove(filename)
     print(response)
 
     try:
@@ -38,9 +41,9 @@ def start_command():
     except Exception as ex:
         print(str(ex)) # Handle exceptions differently
         
-
+lex = boto3.client('lex-runtime', 'us-east-1')
 sd.default.samplerate = 16000
 sd.default.channels = 1
-lex = boto3.client('lex-runtime', 'us-east-1')
-keyboard.add_hotkey('alt+-', start_command)
+hotkey = 'alt+-' # This is one of my mouse buttons
+keyboard.add_hotkey(hotkey, start_command)
 keyboard.wait() # Ctrl+C to kill
